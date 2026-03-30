@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>开源能力自测 - 开源创新发展推进中心</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body class="page-top">
+
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar-logo">
+        <span class="logo-icon">OC</span>
+        <span>OpenCenter 开源创新发展推进中心</span>
+      </a>
+      <div class="navbar-toggle" id="navToggle">
+        <span></span><span></span><span></span>
+      </div>
+      <ul class="navbar-nav" id="navMenu">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="about.html">关于我们</a></li>
+        <li><a href="committees.html">委员会与工作组</a></li>
+        <li><a href="research.html">研究成果</a></li>
+        <li><a href="events.html">会议活动</a></li>
+        <li><a href="members.html">成员单位</a></li>
+        <li><a href="join.html">加入我们</a></li>
+      </ul>
+      <div class="navbar-cta">
+        <a href="join.html" class="btn btn-primary">申请加入</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Banner -->
+  <section class="page-banner" style="background:linear-gradient(135deg, #C96A00 0%, #e07b10 100%);">
+    <h1>开源能力自测</h1>
+    <p>5分钟快速评估，了解企业开源体系建设成熟度</p>
+  </section>
+
+  <!-- 问卷 -->
+  <section class="section">
+    <div class="container">
+      <div class="quiz-container" id="quizForm">
+        <div class="quiz-question">
+          <h3>1. 贵单位是否已制定开源软件使用管理制度？</h3>
+          <div class="quiz-options">
+            <label><input type="radio" name="q1" value="4"> 已制定完善的管理制度并严格执行</label>
+            <label><input type="radio" name="q1" value="3"> 已有初步制度，但执行不够严格</label>
+            <label><input type="radio" name="q1" value="2"> 正在制定中</label>
+            <label><input type="radio" name="q1" value="1"> 尚未制定</label>
+          </div>
+        </div>
+
+        <div class="quiz-question">
+          <h3>2. 贵单位是否建立了开源软件引入审批流程？</h3>
+          <div class="quiz-options">
+            <label><input type="radio" name="q2" value="4"> 有标准化审批流程并集成到研发流程中</label>
+            <label><input type="radio" name="q2" value="3"> 有审批流程但未完全集成</label>
+            <label><input type="radio" name="q2" value="2"> 仅部分团队有审批要求</label>
+            <label><input type="radio" name="q2" value="1"> 无统一审批流程</label>
+          </div>
+        </div>
+
+        <div class="quiz-question">
+          <h3>3. 贵单位是否进行开源许可证合规管理？</h3>
+          <div class="quiz-options">
+            <label><input type="radio" name="q3" value="4"> 使用专业工具自动化扫描并有法务团队审核</label>
+            <label><input type="radio" name="q3" value="3"> 有合规检查但依赖人工审核</label>
+            <label><input type="radio" name="q3" value="2"> 仅在发布前做简单检查</label>
+            <label><input type="radio" name="q3" value="1"> 未关注许可证合规问题</label>
+          </div>
+        </div>
+
+        <div class="quiz-question">
+          <h3>4. 贵单位是否有开源软件安全漏洞管理机制？</h3>
+          <div class="quiz-options">
+            <label><input type="radio" name="q4" value="4"> 有完整的漏洞监控、预警和修复流程</label>
+            <label><input type="radio" name="q4" value="3"> 定期进行安全扫描但响应不够及时</label>
+            <label><input type="radio" name="q4" value="2"> 仅在出现问题时被动处理</label>
+            <label><input type="radio" name="q4" value="1"> 无专门的安全管理机制</label>
+          </div>
+        </div>
+
+        <div class="quiz-question">
+          <h3>5. 贵单位是否维护了内部使用的开源软件清单（SBOM）？</h3>
+          <div class="quiz-options">
+            <label><input type="radio" name="q5" value="4"> 使用工具自动生成并持续更新SBOM</label>
+            <label><input type="radio" name="q5" value="3"> 有手动维护的清单但更新不及时</label>
+            <label><input type="radio" name="q5" value="2"> 部分项目有清单记录</label>
+            <label><input type="radio" name="q5" value="1"> 无软件清单管理</label>
+          </div>
+        </div>
+
+        <div class="quiz-question">
+          <h3>6. 贵单位是否参与过开源社区贡献（代码提交、文档、Issue等）？</h3>
+          <div class="quiz-options">
+            <label><input type="radio" name="q6" value="4"> 有组织地参与多个社区并设有专职团队</label>
+            <label><input type="radio" name="q6" value="3"> 鼓励员工参与但无统一管理</label>
+            <label><input type="radio" name="q6" value="2"> 个别员工偶尔参与</label>
+            <label><input type="radio" name="q6" value="1"> 未参与过社区贡献</label>
+          </div>
+        </div>
+
+        <div class="quiz-question">
+          <h3>7. 贵单位是否有对外开源自有项目的经验？</h3>
+          <div class="quiz-options">
+            <label><input type="radio" name="q7" value="4"> 已开源多个项目并有成熟的开源治理流程</label>
+            <label><input type="radio" name="q7" value="3"> 已开源少量项目</label>
+            <label><input type="radio" name="q7" value="2"> 有计划但尚未实施</label>
+            <label><input type="radio" name="q7" value="1"> 未考虑过对外开源</label>
+          </div>
+        </div>
+
+        <div style="text-align:center;margin-top:36px;">
+          <button type="button" class="btn btn-primary btn-lg" id="submitQuiz">提交并查看结果</button>
+        </div>
+      </div>
+
+      <div class="quiz-result" id="quizResult">
+        <h3 id="quizScore">您的评估得分：--/28</h3>
+        <p id="quizLevel"></p>
+        <p style="color:#999;font-size:0.9rem;margin-bottom:24px;">如需获取详细诊断报告（PDF），请联系我们或申请成为成员单位</p>
+        <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+          <a href="join.html" class="btn btn-primary">申请加入获取完整报告</a>
+          <button type="button" class="btn btn-outline-blue" id="retakeQuiz">重新自测</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="navbar-logo" style="color:#fff;">
+            <span class="logo-icon">OC</span>
+            <span>OpenCenter</span>
+          </div>
+          <p>开源创新发展推进中心，由中国信息通信研究院发起，致力于构建健康可持续的开源生态体系，为企业提供开源治理、合规、安全等全方位支撑。</p>
+        </div>
+        <div class="footer-links">
+          <h4>快速导航</h4>
+          <a href="about.html">关于我们</a>
+          <a href="committees.html">委员会与工作组</a>
+          <a href="research.html">研究成果</a>
+          <a href="events.html">会议活动</a>
+          <a href="members.html">成员单位</a>
+          <a href="join.html">加入我们</a>
+        </div>
+        <div class="footer-contact">
+          <h4>联系我们</h4>
+          <p>邮箱：contact@opencenter.cn</p>
+          <p>地址：北京市海淀区花园北路52号</p>
+          <div class="footer-qrcode">公众号二维码</div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © 2025 开源创新发展推进中心 · 依托云计算开源产业联盟
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
