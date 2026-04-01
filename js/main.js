@@ -132,4 +132,33 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
   }
+
+  // 加入我们页面弹窗
+  var joinModal = document.getElementById('joinModal');
+  var modalClose = document.getElementById('modalClose');
+  var modalSubmit = document.getElementById('modalSubmit');
+
+  if (joinModal) {
+    // 关闭弹窗
+    modalClose.addEventListener('click', function () {
+      joinModal.classList.add('hidden');
+    });
+    // 点击遮罩关闭
+    joinModal.addEventListener('click', function (e) {
+      if (e.target === joinModal) {
+        joinModal.classList.add('hidden');
+      }
+    });
+    // 弹窗内提交
+    if (modalSubmit) {
+      modalSubmit.addEventListener('click', function () {
+        document.getElementById('modalForm').style.display = 'none';
+        document.getElementById('modalSuccess').style.display = 'block';
+        // 2秒后自动关闭弹窗
+        setTimeout(function () {
+          joinModal.classList.add('hidden');
+        }, 2500);
+      });
+    }
+  }
 });

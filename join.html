@@ -14,7 +14,7 @@
     <div class="container">
       <a href="index.html" class="navbar-logo">
         <img src="images/opencenter.png" alt="OpenCenter" class="logo-img">
-        <span>OpenCenter 开源创新发展推进中心</span>
+        <span>开源创新发展推进中心</span>
       </a>
       <div class="navbar-toggle" id="navToggle">
         <span></span><span></span><span></span>
@@ -221,9 +221,9 @@
         <div class="footer-brand">
           <div class="navbar-logo" style="color:#fff;">
             <img src="images/opencenter.png" alt="OpenCenter" class="logo-img">
-            <span>OpenCenter</span>
+            <span>开源创新发展推进中心</span>
           </div>
-          <p>开源创新发展推进中心，由中国信息通信研究院发起，致力于构建健康可持续的开源生态体系，为企业提供开源治理、合规、安全等全方位支撑。</p>
+          <p>由中国信息通信研究院发起，致力于构建健康可持续的开源生态体系，为企业提供开源治理、合规、安全等全方位支撑。</p>
         </div>
         <div class="footer-links">
           <h4>快速导航</h4>
@@ -246,6 +246,58 @@
       </div>
     </div>
   </footer>
+
+  <!-- 弹窗表单 -->
+  <div class="modal-overlay" id="joinModal">
+    <div class="modal">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <h2>申请加入</h2>
+      <p>填写以下信息，我们将尽快与您联系</p>
+      <div id="modalForm">
+        <div class="form-group">
+          <label>姓名 *</label>
+          <input type="text" placeholder="请输入您的姓名" required>
+        </div>
+        <div class="form-group">
+          <label>公司名称 *</label>
+          <input type="text" placeholder="请输入公司全称" required>
+        </div>
+        <div class="form-group">
+          <label>职位 *</label>
+          <input type="text" placeholder="请输入您的职位" required>
+        </div>
+        <div class="form-group">
+          <label>工作邮箱 *</label>
+          <input type="email" placeholder="请输入工作邮箱" required>
+        </div>
+        <div class="form-group">
+          <label>联系电话</label>
+          <input type="tel" placeholder="请输入联系电话">
+        </div>
+        <div class="form-group">
+          <label>意向成员级别</label>
+          <select>
+            <option value="">请选择</option>
+            <option value="platinum">白金成员</option>
+            <option value="gold">黄金成员</option>
+            <option value="silver">白银成员</option>
+            <option value="normal">普通成员</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>申请理由</label>
+          <textarea placeholder="请简要说明贵单位希望加入的原因和期望获得的支持"></textarea>
+        </div>
+        <div class="form-submit">
+          <button type="button" class="btn btn-primary" id="modalSubmit">提交申请</button>
+        </div>
+      </div>
+      <div class="form-success" id="modalSuccess">
+        <h3>感谢您的申请！</h3>
+        <p>我们将在3个工作日内与您联系，请留意邮箱通知。</p>
+      </div>
+    </div>
+  </div>
 
   <script src="js/main.js"></script>
 </body>
