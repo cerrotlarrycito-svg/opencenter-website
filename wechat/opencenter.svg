@@ -1,0 +1,378 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 980" width="100%">
+
+  <!-- ===== 导航栏背景 ===== -->
+  <rect x="0" y="0" width="750" height="70" fill="#1E3A5F"/>
+
+  <!-- 导航按钮底色（点击切换高亮） -->
+  <rect id="bg1" x="0" y="0" width="150" height="70" fill="#C96A00">
+    <animate attributeName="fill" to="#C96A00" begin="n1.click" dur="0.01s" fill="freeze"/>
+    <animate attributeName="fill" to="#1E3A5F" begin="n2.click" dur="0.01s" fill="freeze"/>
+    <animate attributeName="fill" to="#1E3A5F" begin="n3.click" dur="0.01s" fill="freeze"/>
+    <animate attributeName="fill" to="#1E3A5F" begin="n4.click" dur="0.01s" fill="freeze"/>
+    <animate attributeName="fill" to="#1E3A5F" begin="n5.click" dur="0.01s" fill="freeze"/>
+  </rect>
+  <rect id="bg2" x="150" y="0" width="150" height="70" fill="#1E3A5F">
+    <animate attributeName="fill" to="#1E3A5F" begin="n1.click" dur="0.01s" fill="freeze"/>
+    <animate attributeName="fill" to="#C96A00" begin="n2.click" dur="0.01s" fill="freeze"/>
+    <animate attributeName="fill" to="#1E3A5F" begin="n3.click" dur="0.01s" fill="freeze"/>
+    <animate attributeName="fill" to="#1E3A5F" begin="n4.click" dur="0.01s" fill="freeze"/>
+    <animate attributeName="fill" to="#1E3A5F" begin="n5.click" dur="0.01s" fill="freeze"/>
+  </rect>
+  <rect id="bg3" x="300" y="0" width="150" height="70" fill="#1E3A5F">
+    <animate attributeName="fill" to="#1E3A5F" begin="n1.click" dur="0.01s" fill="freeze"/>
+    <animate attributeName="fill" to="#1E3A5F" begin="n2.click" dur="0.01s" fill="freeze"/>
+    <animate attributeName="fill" to="#C96A00" begin="n3.click" dur="0.01s" fill="freeze"/>
+    <animate attributeName="fill" to="#1E3A5F" begin="n4.click" dur="0.01s" fill="freeze"/>
+    <animate attributeName="fill" to="#1E3A5F" begin="n5.click" dur="0.01s" fill="freeze"/>
+  </rect>
+  <rect id="bg4" x="450" y="0" width="150" height="70" fill="#1E3A5F">
+    <animate attributeName="fill" to="#1E3A5F" begin="n1.click" dur="0.01s" fill="freeze"/>
+    <animate attributeName="fill" to="#1E3A5F" begin="n2.click" dur="0.01s" fill="freeze"/>
+    <animate attributeName="fill" to="#1E3A5F" begin="n3.click" dur="0.01s" fill="freeze"/>
+    <animate attributeName="fill" to="#C96A00" begin="n4.click" dur="0.01s" fill="freeze"/>
+    <animate attributeName="fill" to="#1E3A5F" begin="n5.click" dur="0.01s" fill="freeze"/>
+  </rect>
+  <rect id="bg5" x="600" y="0" width="150" height="70" fill="#1E3A5F">
+    <animate attributeName="fill" to="#1E3A5F" begin="n1.click" dur="0.01s" fill="freeze"/>
+    <animate attributeName="fill" to="#1E3A5F" begin="n2.click" dur="0.01s" fill="freeze"/>
+    <animate attributeName="fill" to="#1E3A5F" begin="n3.click" dur="0.01s" fill="freeze"/>
+    <animate attributeName="fill" to="#1E3A5F" begin="n4.click" dur="0.01s" fill="freeze"/>
+    <animate attributeName="fill" to="#C96A00" begin="n5.click" dur="0.01s" fill="freeze"/>
+  </rect>
+
+  <!-- 导航按钮分割线 -->
+  <line x1="150" y1="15" x2="150" y2="55" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <line x1="300" y1="15" x2="300" y2="55" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <line x1="450" y1="15" x2="450" y2="55" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <line x1="600" y1="15" x2="600" y2="55" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+
+  <!-- 导航按钮文字 -->
+  <text x="75" y="43" text-anchor="middle" font-size="24" fill="#fff" font-family="PingFang SC,Microsoft YaHei,sans-serif">中心简介</text>
+  <text x="225" y="43" text-anchor="middle" font-size="24" fill="#fff" font-family="PingFang SC,Microsoft YaHei,sans-serif">核心服务</text>
+  <text x="375" y="43" text-anchor="middle" font-size="24" fill="#fff" font-family="PingFang SC,Microsoft YaHei,sans-serif">工作组</text>
+  <text x="525" y="43" text-anchor="middle" font-size="24" fill="#fff" font-family="PingFang SC,Microsoft YaHei,sans-serif">研究成果</text>
+  <text x="675" y="43" text-anchor="middle" font-size="24" fill="#fff" font-family="PingFang SC,Microsoft YaHei,sans-serif">加入我们</text>
+
+  <!-- 导航透明点击热区（覆盖在最上层） -->
+  <rect id="n1" x="0" y="0" width="150" height="70" fill="transparent"/>
+  <rect id="n2" x="150" y="0" width="150" height="70" fill="transparent"/>
+  <rect id="n3" x="300" y="0" width="150" height="70" fill="transparent"/>
+  <rect id="n4" x="450" y="0" width="150" height="70" fill="transparent"/>
+  <rect id="n5" x="600" y="0" width="150" height="70" fill="transparent"/>
+
+
+  <!-- ========================================== -->
+  <!-- 面板1：中心简介（默认显示） -->
+  <!-- ========================================== -->
+  <g id="p1" display="inline">
+    <animate attributeName="display" to="inline" begin="n1.click" dur="0.01s" fill="freeze"/>
+    <animate attributeName="display" to="none" begin="n2.click" dur="0.01s" fill="freeze"/>
+    <animate attributeName="display" to="none" begin="n3.click" dur="0.01s" fill="freeze"/>
+    <animate attributeName="display" to="none" begin="n4.click" dur="0.01s" fill="freeze"/>
+    <animate attributeName="display" to="none" begin="n5.click" dur="0.01s" fill="freeze"/>
+
+    <!-- 背景 -->
+    <rect x="0" y="70" width="750" height="910" fill="#ffffff"/>
+
+    <!-- Hero区域 -->
+    <rect x="0" y="70" width="750" height="220" fill="#1E3A5F"/>
+    <rect x="0" y="70" width="750" height="220" fill="url(#heroGrad)" opacity="0.3"/>
+
+    <!-- Logo占位圆 -->
+    <circle cx="375" cy="140" r="30" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.4)" stroke-width="2"/>
+    <text x="375" y="148" text-anchor="middle" font-size="22" fill="#fff" font-weight="bold" font-family="PingFang SC,Microsoft YaHei,sans-serif">OC</text>
+
+    <text x="375" y="205" text-anchor="middle" font-size="40" fill="#ffffff" font-weight="bold" font-family="PingFang SC,Microsoft YaHei,sans-serif">开源创新发展推进中心</text>
+    <text x="375" y="248" text-anchor="middle" font-size="24" fill="rgba(255,255,255,0.8)" font-family="PingFang SC,Microsoft YaHei,sans-serif">由中国信息通信研究院发起，汇聚产学研各界力量，共建开源生态</text>
+
+    <!-- 数字统计条 -->
+    <rect x="0" y="290" width="750" height="120" fill="#f5f6f8"/>
+    <!-- 成员单位 -->
+    <text x="94" y="340" text-anchor="middle" font-size="42" fill="#1E3A5F" font-weight="bold" font-family="PingFang SC,Microsoft YaHei,sans-serif">220+</text>
+    <text x="94" y="375" text-anchor="middle" font-size="22" fill="#888" font-family="PingFang SC,Microsoft YaHei,sans-serif">成员单位</text>
+    <!-- 覆盖行业 -->
+    <text x="281" y="340" text-anchor="middle" font-size="42" fill="#1E3A5F" font-weight="bold" font-family="PingFang SC,Microsoft YaHei,sans-serif">5+</text>
+    <text x="281" y="375" text-anchor="middle" font-size="22" fill="#888" font-family="PingFang SC,Microsoft YaHei,sans-serif">覆盖行业</text>
+    <!-- 开源案例 -->
+    <text x="469" y="340" text-anchor="middle" font-size="42" fill="#1E3A5F" font-weight="bold" font-family="PingFang SC,Microsoft YaHei,sans-serif">100+</text>
+    <text x="469" y="375" text-anchor="middle" font-size="22" fill="#888" font-family="PingFang SC,Microsoft YaHei,sans-serif">开源案例</text>
+    <!-- 累计活动 -->
+    <text x="656" y="340" text-anchor="middle" font-size="42" fill="#1E3A5F" font-weight="bold" font-family="PingFang SC,Microsoft YaHei,sans-serif">10+</text>
+    <text x="656" y="375" text-anchor="middle" font-size="22" fill="#888" font-family="PingFang SC,Microsoft YaHei,sans-serif">累计活动</text>
+    <!-- 分割线 -->
+    <line x1="187" y1="325" x2="187" y2="385" stroke="#ddd" stroke-width="1"/>
+    <line x1="375" y1="325" x2="375" y2="385" stroke="#ddd" stroke-width="1"/>
+    <line x1="562" y1="325" x2="562" y2="385" stroke="#ddd" stroke-width="1"/>
+
+    <!-- 成立背景 -->
+    <text x="375" y="460" text-anchor="middle" font-size="34" fill="#1E3A5F" font-weight="bold" font-family="PingFang SC,Microsoft YaHei,sans-serif">成立背景</text>
+    <line x1="335" y1="475" x2="415" y2="475" stroke="#C96A00" stroke-width="3" stroke-linecap="round"/>
+
+    <text x="60" y="520" font-size="24" fill="#555" font-family="PingFang SC,Microsoft YaHei,sans-serif">
+      <tspan x="60" dy="0">随着开源模式在全球范围内广泛应用，开源已成为推动</tspan>
+      <tspan x="60" dy="38">软件产业创新发展的关键力量。在工业和信息化部指导</tspan>
+      <tspan x="60" dy="38">下，由中国信息通信研究院联合产业界各方力量，发起</tspan>
+      <tspan x="60" dy="38">成立开源创新发展推进中心。</tspan>
+    </text>
+
+    <text x="60" y="680" font-size="24" fill="#555" font-family="PingFang SC,Microsoft YaHei,sans-serif">
+      <tspan x="60" dy="0">中心依托云计算开源产业联盟运营，致力于搭建政产学</tspan>
+      <tspan x="60" dy="38">研用沟通桥梁，推动开源技术标准制定、开源治理能力</tspan>
+      <tspan x="60" dy="38">提升、开源生态健康发展。</tspan>
+    </text>
+
+    <!-- 使命愿景 -->
+    <text x="375" y="820" text-anchor="middle" font-size="34" fill="#1E3A5F" font-weight="bold" font-family="PingFang SC,Microsoft YaHei,sans-serif">使命与愿景</text>
+    <line x1="325" y1="835" x2="425" y2="835" stroke="#C96A00" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- 使命 -->
+    <rect x="40" y="860" width="210" height="100" rx="8" fill="#f0f4f9"/>
+    <text x="145" y="898" text-anchor="middle" font-size="26" fill="#1E3A5F" font-weight="bold" font-family="PingFang SC,Microsoft YaHei,sans-serif">使命</text>
+    <text x="145" y="930" text-anchor="middle" font-size="18" fill="#888" font-family="PingFang SC,Microsoft YaHei,sans-serif">构建健康可持续的开源生态</text>
+    <!-- 愿景 -->
+    <rect x="270" y="860" width="210" height="100" rx="8" fill="#f0f4f9"/>
+    <text x="375" y="898" text-anchor="middle" font-size="26" fill="#1E3A5F" font-weight="bold" font-family="PingFang SC,Microsoft YaHei,sans-serif">愿景</text>
+    <text x="375" y="930" text-anchor="middle" font-size="18" fill="#888" font-family="PingFang SC,Microsoft YaHei,sans-serif">最具影响力的开源行业组织</text>
+    <!-- 价值观 -->
+    <rect x="500" y="860" width="210" height="100" rx="8" fill="#f0f4f9"/>
+    <text x="605" y="898" text-anchor="middle" font-size="26" fill="#1E3A5F" font-weight="bold" font-family="PingFang SC,Microsoft YaHei,sans-serif">价值观</text>
+    <text x="605" y="930" text-anchor="middle" font-size="18" fill="#888" font-family="PingFang SC,Microsoft YaHei,sans-serif">开放协作 技术中立 共建共享</text>
+  </g>
+
+
+  <!-- ========================================== -->
+  <!-- 面板2：核心服务 -->
+  <!-- ========================================== -->
+  <g id="p2" display="none">
+    <animate attributeName="display" to="none" begin="n1.click" dur="0.01s" fill="freeze"/>
+    <animate attributeName="display" to="inline" begin="n2.click" dur="0.01s" fill="freeze"/>
+    <animate attributeName="display" to="none" begin="n3.click" dur="0.01s" fill="freeze"/>
+    <animate attributeName="display" to="none" begin="n4.click" dur="0.01s" fill="freeze"/>
+    <animate attributeName="display" to="none" begin="n5.click" dur="0.01s" fill="freeze"/>
+
+    <rect x="0" y="70" width="750" height="910" fill="#ffffff"/>
+
+    <text x="375" y="130" text-anchor="middle" font-size="34" fill="#1E3A5F" font-weight="bold" font-family="PingFang SC,Microsoft YaHei,sans-serif">核心服务</text>
+    <text x="375" y="165" text-anchor="middle" font-size="22" fill="#888" font-family="PingFang SC,Microsoft YaHei,sans-serif">为企业提供全方位开源生态支撑</text>
+
+    <!-- 服务卡片1：开源能力评估 -->
+    <rect x="40" y="200" width="670" height="160" rx="10" fill="#f8f9fb" stroke="#e8e8e8" stroke-width="1"/>
+    <circle cx="100" cy="260" r="28" fill="#1E3A5F"/>
+    <text x="100" y="268" text-anchor="middle" font-size="22" fill="#fff" font-family="PingFang SC,Microsoft YaHei,sans-serif">评</text>
+    <text x="155" y="255" font-size="28" fill="#1E3A5F" font-weight="bold" font-family="PingFang SC,Microsoft YaHei,sans-serif">开源能力评估</text>
+    <text x="155" y="295" font-size="22" fill="#888" font-family="PingFang SC,Microsoft YaHei,sans-serif">企业开源体系建设能力自测与评估</text>
+    <text x="155" y="330" font-size="22" fill="#888" font-family="PingFang SC,Microsoft YaHei,sans-serif">全面诊断开源治理成熟度</text>
+
+    <!-- 服务卡片2：开源情报周报 -->
+    <rect x="40" y="385" width="670" height="160" rx="10" fill="#f8f9fb" stroke="#e8e8e8" stroke-width="1"/>
+    <circle cx="100" cy="445" r="28" fill="#1E3A5F"/>
+    <text x="100" y="453" text-anchor="middle" font-size="22" fill="#fff" font-family="PingFang SC,Microsoft YaHei,sans-serif">报</text>
+    <text x="155" y="440" font-size="28" fill="#1E3A5F" font-weight="bold" font-family="PingFang SC,Microsoft YaHei,sans-serif">开源情报周报</text>
+    <text x="155" y="480" font-size="22" fill="#888" font-family="PingFang SC,Microsoft YaHei,sans-serif">每周AI精选开源生态动态</text>
+    <text x="155" y="515" font-size="22" fill="#888" font-family="PingFang SC,Microsoft YaHei,sans-serif">涵盖政策、技术、社区热点，直达成员邮箱</text>
+
+    <!-- 服务卡片3：供需对接 -->
+    <rect x="40" y="570" width="670" height="160" rx="10" fill="#f8f9fb" stroke="#e8e8e8" stroke-width="1"/>
+    <circle cx="100" cy="630" r="28" fill="#1E3A5F"/>
+    <text x="100" y="638" text-anchor="middle" font-size="22" fill="#fff" font-family="PingFang SC,Microsoft YaHei,sans-serif">接</text>
+    <text x="155" y="625" font-size="28" fill="#1E3A5F" font-weight="bold" font-family="PingFang SC,Microsoft YaHei,sans-serif">供需对接</text>
+    <text x="155" y="665" font-size="22" fill="#888" font-family="PingFang SC,Microsoft YaHei,sans-serif">连接开源需求方与解决方案提供方</text>
+    <text x="155" y="700" font-size="22" fill="#888" font-family="PingFang SC,Microsoft YaHei,sans-serif">促进产业链上下游高效协作</text>
+
+    <!-- 免费自测CTA -->
+    <rect x="40" y="780" width="670" height="140" rx="10" fill="#C96A00"/>
+    <text x="375" y="830" text-anchor="middle" font-size="32" fill="#ffffff" font-weight="bold" font-family="PingFang SC,Microsoft YaHei,sans-serif">免费体验 · 开源能力自测</text>
+    <text x="375" y="870" text-anchor="middle" font-size="22" fill="rgba(255,255,255,0.85)" font-family="PingFang SC,Microsoft YaHei,sans-serif">填写简单问卷，获取企业开源能力诊断报告</text>
+    <rect x="270" y="885" width="210" height="22" rx="4" fill="rgba(255,255,255,0.25)"/>
+    <text x="375" y="902" text-anchor="middle" font-size="16" fill="#fff" font-family="PingFang SC,Microsoft YaHei,sans-serif">长按识别二维码参与</text>
+  </g>
+
+
+  <!-- ========================================== -->
+  <!-- 面板3：工作组 -->
+  <!-- ========================================== -->
+  <g id="p3" display="none">
+    <animate attributeName="display" to="none" begin="n1.click" dur="0.01s" fill="freeze"/>
+    <animate attributeName="display" to="none" begin="n2.click" dur="0.01s" fill="freeze"/>
+    <animate attributeName="display" to="inline" begin="n3.click" dur="0.01s" fill="freeze"/>
+    <animate attributeName="display" to="none" begin="n4.click" dur="0.01s" fill="freeze"/>
+    <animate attributeName="display" to="none" begin="n5.click" dur="0.01s" fill="freeze"/>
+
+    <rect x="0" y="70" width="750" height="910" fill="#ffffff"/>
+
+    <text x="375" y="130" text-anchor="middle" font-size="34" fill="#1E3A5F" font-weight="bold" font-family="PingFang SC,Microsoft YaHei,sans-serif">委员会与工作组</text>
+    <text x="375" y="165" text-anchor="middle" font-size="22" fill="#888" font-family="PingFang SC,Microsoft YaHei,sans-serif">搭建行业协作平台，推动开源标准与实践</text>
+
+    <!-- 行业委员会 -->
+    <rect x="40" y="200" width="670" height="36" rx="4" fill="#1E3A5F"/>
+    <text x="60" y="226" font-size="22" fill="#fff" font-weight="bold" font-family="PingFang SC,Microsoft YaHei,sans-serif">行业委员会</text>
+
+    <rect x="40" y="246" width="670" height="44" fill="#f8f9fb" stroke="#eee" stroke-width="1"/>
+    <circle cx="68" cy="268" r="6" fill="#C96A00"/>
+    <text x="88" y="275" font-size="22" fill="#555" font-family="PingFang SC,Microsoft YaHei,sans-serif">金融行业委员会 — 聚焦金融领域开源技术应用与合规治理</text>
+
+    <rect x="40" y="290" width="670" height="44" fill="#fff" stroke="#eee" stroke-width="1"/>
+    <circle cx="68" cy="312" r="6" fill="#C96A00"/>
+    <text x="88" y="319" font-size="22" fill="#555" font-family="PingFang SC,Microsoft YaHei,sans-serif">通信行业委员会 — 推动通信领域开源技术标准制定</text>
+
+    <rect x="40" y="334" width="670" height="44" fill="#f8f9fb" stroke="#eee" stroke-width="1"/>
+    <circle cx="68" cy="356" r="6" fill="#C96A00"/>
+    <text x="88" y="363" font-size="22" fill="#555" font-family="PingFang SC,Microsoft YaHei,sans-serif">汽车行业委员会 — 促进智能网联汽车开源软件生态</text>
+
+    <!-- 技术委员会 -->
+    <rect x="40" y="408" width="670" height="36" rx="4" fill="#1a6b40"/>
+    <text x="60" y="434" font-size="22" fill="#fff" font-weight="bold" font-family="PingFang SC,Microsoft YaHei,sans-serif">技术委员会</text>
+
+    <rect x="40" y="454" width="670" height="44" fill="#f8f9fb" stroke="#eee" stroke-width="1"/>
+    <circle cx="68" cy="476" r="6" fill="#1a6b40"/>
+    <text x="88" y="483" font-size="22" fill="#555" font-family="PingFang SC,Microsoft YaHei,sans-serif">开源安全技术委员会 — 开源供应链安全与漏洞治理</text>
+
+    <rect x="40" y="498" width="670" height="44" fill="#fff" stroke="#eee" stroke-width="1"/>
+    <circle cx="68" cy="520" r="6" fill="#1a6b40"/>
+    <text x="88" y="527" font-size="22" fill="#555" font-family="PingFang SC,Microsoft YaHei,sans-serif">开源合规技术委员会 — 许可证合规指引与最佳实践</text>
+
+    <rect x="40" y="542" width="670" height="44" fill="#f8f9fb" stroke="#eee" stroke-width="1"/>
+    <circle cx="68" cy="564" r="6" fill="#1a6b40"/>
+    <text x="88" y="571" font-size="22" fill="#555" font-family="PingFang SC,Microsoft YaHei,sans-serif">AI开源技术委员会 — 人工智能开源模型标准化</text>
+
+    <!-- 专项工作组 -->
+    <rect x="40" y="616" width="670" height="36" rx="4" fill="#C96A00"/>
+    <text x="60" y="642" font-size="22" fill="#fff" font-weight="bold" font-family="PingFang SC,Microsoft YaHei,sans-serif">专项工作组</text>
+
+    <rect x="40" y="662" width="670" height="44" fill="#f8f9fb" stroke="#eee" stroke-width="1"/>
+    <circle cx="68" cy="684" r="6" fill="#C96A00"/>
+    <text x="88" y="691" font-size="22" fill="#555" font-family="PingFang SC,Microsoft YaHei,sans-serif">SBOM工作组 — 软件物料清单标准制定与工具链建设</text>
+
+    <rect x="40" y="706" width="670" height="44" fill="#fff" stroke="#eee" stroke-width="1"/>
+    <circle cx="68" cy="728" r="6" fill="#C96A00"/>
+    <text x="88" y="735" font-size="22" fill="#555" font-family="PingFang SC,Microsoft YaHei,sans-serif">开源教育工作组 — 开源人才培养体系与认证标准</text>
+
+    <rect x="40" y="750" width="670" height="44" fill="#f8f9fb" stroke="#eee" stroke-width="1"/>
+    <circle cx="68" cy="772" r="6" fill="#C96A00"/>
+    <text x="88" y="779" font-size="22" fill="#555" font-family="PingFang SC,Microsoft YaHei,sans-serif">开源评测工作组 — 开源项目与社区健康度评测方法</text>
+
+    <rect x="40" y="794" width="670" height="44" fill="#fff" stroke="#eee" stroke-width="1"/>
+    <circle cx="68" cy="816" r="6" fill="#C96A00"/>
+    <text x="88" y="823" font-size="22" fill="#555" font-family="PingFang SC,Microsoft YaHei,sans-serif">开源治理工作组 — 企业开源治理框架与成熟度模型</text>
+  </g>
+
+
+  <!-- ========================================== -->
+  <!-- 面板4：研究成果 -->
+  <!-- ========================================== -->
+  <g id="p4" display="none">
+    <animate attributeName="display" to="none" begin="n1.click" dur="0.01s" fill="freeze"/>
+    <animate attributeName="display" to="none" begin="n2.click" dur="0.01s" fill="freeze"/>
+    <animate attributeName="display" to="none" begin="n3.click" dur="0.01s" fill="freeze"/>
+    <animate attributeName="display" to="inline" begin="n4.click" dur="0.01s" fill="freeze"/>
+    <animate attributeName="display" to="none" begin="n5.click" dur="0.01s" fill="freeze"/>
+
+    <rect x="0" y="70" width="750" height="910" fill="#ffffff"/>
+
+    <text x="375" y="130" text-anchor="middle" font-size="34" fill="#1E3A5F" font-weight="bold" font-family="PingFang SC,Microsoft YaHei,sans-serif">研究成果</text>
+    <text x="375" y="165" text-anchor="middle" font-size="22" fill="#888" font-family="PingFang SC,Microsoft YaHei,sans-serif">白皮书、研究报告与标准规范</text>
+
+    <!-- 报告1 -->
+    <rect x="40" y="200" width="670" height="130" rx="10" fill="#f8f9fb" stroke="#e8e8e8" stroke-width="1"/>
+    <rect x="60" y="220" width="80" height="90" rx="6" fill="#1E3A5F"/>
+    <text x="100" y="268" text-anchor="middle" font-size="18" fill="rgba(255,255,255,0.8)" font-family="PingFang SC,Microsoft YaHei,sans-serif">白皮书</text>
+    <text x="165" y="252" font-size="26" fill="#333" font-weight="bold" font-family="PingFang SC,Microsoft YaHei,sans-serif">2025中国开源生态发展白皮书</text>
+    <text x="165" y="290" font-size="20" fill="#999" font-family="PingFang SC,Microsoft YaHei,sans-serif">2025年5月 · 白皮书</text>
+
+    <!-- 报告2 -->
+    <rect x="40" y="350" width="670" height="130" rx="10" fill="#f8f9fb" stroke="#e8e8e8" stroke-width="1"/>
+    <rect x="60" y="370" width="80" height="90" rx="6" fill="#1a6b40"/>
+    <text x="100" y="418" text-anchor="middle" font-size="18" fill="rgba(255,255,255,0.8)" font-family="PingFang SC,Microsoft YaHei,sans-serif">报告</text>
+    <text x="165" y="402" font-size="26" fill="#333" font-weight="bold" font-family="PingFang SC,Microsoft YaHei,sans-serif">企业开源治理成熟度报告</text>
+    <text x="165" y="440" font-size="20" fill="#999" font-family="PingFang SC,Microsoft YaHei,sans-serif">2025年3月 · 研究报告</text>
+
+    <!-- 报告3 -->
+    <rect x="40" y="500" width="670" height="130" rx="10" fill="#f8f9fb" stroke="#e8e8e8" stroke-width="1"/>
+    <rect x="60" y="520" width="80" height="90" rx="6" fill="#1a6b40"/>
+    <text x="100" y="568" text-anchor="middle" font-size="18" fill="rgba(255,255,255,0.8)" font-family="PingFang SC,Microsoft YaHei,sans-serif">报告</text>
+    <text x="165" y="552" font-size="26" fill="#333" font-weight="bold" font-family="PingFang SC,Microsoft YaHei,sans-serif">开源软件供应链安全研究报告</text>
+    <text x="165" y="590" font-size="20" fill="#999" font-family="PingFang SC,Microsoft YaHei,sans-serif">2024年10月 · 研究报告</text>
+
+    <!-- 报告4 -->
+    <rect x="40" y="650" width="670" height="130" rx="10" fill="#f8f9fb" stroke="#e8e8e8" stroke-width="1"/>
+    <rect x="60" y="670" width="80" height="90" rx="6" fill="#C96A00"/>
+    <text x="100" y="718" text-anchor="middle" font-size="18" fill="rgba(255,255,255,0.8)" font-family="PingFang SC,Microsoft YaHei,sans-serif">标准</text>
+    <text x="165" y="702" font-size="26" fill="#333" font-weight="bold" font-family="PingFang SC,Microsoft YaHei,sans-serif">开源项目评测规范（团体标准）</text>
+    <text x="165" y="740" font-size="20" fill="#999" font-family="PingFang SC,Microsoft YaHei,sans-serif">2025年1月 · 标准规范</text>
+
+    <text x="375" y="850" text-anchor="middle" font-size="22" fill="#999" font-family="PingFang SC,Microsoft YaHei,sans-serif">点击公众号菜单"研究成果"获取完整列表</text>
+  </g>
+
+
+  <!-- ========================================== -->
+  <!-- 面板5：加入我们 -->
+  <!-- ========================================== -->
+  <g id="p5" display="none">
+    <animate attributeName="display" to="none" begin="n1.click" dur="0.01s" fill="freeze"/>
+    <animate attributeName="display" to="none" begin="n2.click" dur="0.01s" fill="freeze"/>
+    <animate attributeName="display" to="none" begin="n3.click" dur="0.01s" fill="freeze"/>
+    <animate attributeName="display" to="none" begin="n4.click" dur="0.01s" fill="freeze"/>
+    <animate attributeName="display" to="inline" begin="n5.click" dur="0.01s" fill="freeze"/>
+
+    <rect x="0" y="70" width="750" height="910" fill="#ffffff"/>
+
+    <text x="375" y="130" text-anchor="middle" font-size="34" fill="#1E3A5F" font-weight="bold" font-family="PingFang SC,Microsoft YaHei,sans-serif">加入我们</text>
+    <text x="375" y="165" text-anchor="middle" font-size="22" fill="#888" font-family="PingFang SC,Microsoft YaHei,sans-serif">成为成员单位，共享开源生态资源与服务</text>
+
+    <!-- 成员等级 -->
+    <text x="375" y="220" text-anchor="middle" font-size="28" fill="#1E3A5F" font-weight="bold" font-family="PingFang SC,Microsoft YaHei,sans-serif">四级成员体系</text>
+
+    <!-- 白金 -->
+    <rect x="40" y="245" width="325" height="100" rx="8" fill="#f5f0e8" stroke="#c9b896" stroke-width="2"/>
+    <text x="203" y="280" text-anchor="middle" font-size="26" fill="#8a7d65" font-weight="bold" font-family="PingFang SC,Microsoft YaHei,sans-serif">白金成员</text>
+    <text x="203" y="320" text-anchor="middle" font-size="20" fill="#999" font-family="PingFang SC,Microsoft YaHei,sans-serif">全部权益 + 定制咨询 + 品牌露出</text>
+    <!-- 黄金 -->
+    <rect x="385" y="245" width="325" height="100" rx="8" fill="#fdf8e8" stroke="#e8d890" stroke-width="2"/>
+    <text x="548" y="280" text-anchor="middle" font-size="26" fill="#b89e20" font-weight="bold" font-family="PingFang SC,Microsoft YaHei,sans-serif">黄金成员</text>
+    <text x="548" y="320" text-anchor="middle" font-size="20" fill="#999" font-family="PingFang SC,Microsoft YaHei,sans-serif">闭门交流 + 供需对接 + 免费评估</text>
+    <!-- 白银 -->
+    <rect x="40" y="360" width="325" height="100" rx="8" fill="#f2f2f2" stroke="#bbb" stroke-width="2"/>
+    <text x="203" y="395" text-anchor="middle" font-size="26" fill="#666" font-weight="bold" font-family="PingFang SC,Microsoft YaHei,sans-serif">白银成员</text>
+    <text x="203" y="435" text-anchor="middle" font-size="20" fill="#999" font-family="PingFang SC,Microsoft YaHei,sans-serif">委员会参与 + 活动优先报名</text>
+    <!-- 普通 -->
+    <rect x="385" y="360" width="325" height="100" rx="8" fill="#f0f4f9" stroke="#c0d0e8" stroke-width="2"/>
+    <text x="548" y="395" text-anchor="middle" font-size="26" fill="#1E3A5F" font-weight="bold" font-family="PingFang SC,Microsoft YaHei,sans-serif">普通成员</text>
+    <text x="548" y="435" text-anchor="middle" font-size="20" fill="#999" font-family="PingFang SC,Microsoft YaHei,sans-serif">情报周报 + 研究报告</text>
+
+    <!-- 申请流程 -->
+    <text x="375" y="520" text-anchor="middle" font-size="28" fill="#1E3A5F" font-weight="bold" font-family="PingFang SC,Microsoft YaHei,sans-serif">申请流程</text>
+
+    <!-- 4步流程 -->
+    <circle cx="135" cy="570" r="22" fill="#1E3A5F"/>
+    <text x="135" y="578" text-anchor="middle" font-size="22" fill="#fff" font-weight="bold" font-family="PingFang SC,Microsoft YaHei,sans-serif">1</text>
+    <text x="135" y="614" text-anchor="middle" font-size="22" fill="#555" font-family="PingFang SC,Microsoft YaHei,sans-serif">提交申请</text>
+    <line x1="170" y1="570" x2="240" y2="570" stroke="#ccc" stroke-width="2"/>
+
+    <circle cx="290" cy="570" r="22" fill="#1E3A5F"/>
+    <text x="290" y="578" text-anchor="middle" font-size="22" fill="#fff" font-weight="bold" font-family="PingFang SC,Microsoft YaHei,sans-serif">2</text>
+    <text x="290" y="614" text-anchor="middle" font-size="22" fill="#555" font-family="PingFang SC,Microsoft YaHei,sans-serif">资质审核</text>
+    <line x1="325" y1="570" x2="395" y2="570" stroke="#ccc" stroke-width="2"/>
+
+    <circle cx="445" cy="570" r="22" fill="#1E3A5F"/>
+    <text x="445" y="578" text-anchor="middle" font-size="22" fill="#fff" font-weight="bold" font-family="PingFang SC,Microsoft YaHei,sans-serif">3</text>
+    <text x="445" y="614" text-anchor="middle" font-size="22" fill="#555" font-family="PingFang SC,Microsoft YaHei,sans-serif">签署协议</text>
+    <line x1="480" y1="570" x2="550" y2="570" stroke="#ccc" stroke-width="2"/>
+
+    <circle cx="600" cy="570" r="22" fill="#C96A00"/>
+    <text x="600" y="578" text-anchor="middle" font-size="22" fill="#fff" font-weight="bold" font-family="PingFang SC,Microsoft YaHei,sans-serif">4</text>
+    <text x="600" y="614" text-anchor="middle" font-size="22" fill="#555" font-family="PingFang SC,Microsoft YaHei,sans-serif">正式入会</text>
+
+    <!-- 联系方式 -->
+    <rect x="40" y="660" width="670" height="280" rx="10" fill="#f0f4f9"/>
+    <text x="375" y="705" text-anchor="middle" font-size="28" fill="#1E3A5F" font-weight="bold" font-family="PingFang SC,Microsoft YaHei,sans-serif">联系秘书处</text>
+
+    <text x="375" y="745" text-anchor="middle" font-size="24" fill="#555" font-family="PingFang SC,Microsoft YaHei,sans-serif">邮箱：contact@opencenter.cn</text>
+    <text x="375" y="780" text-anchor="middle" font-size="24" fill="#555" font-family="PingFang SC,Microsoft YaHei,sans-serif">地址：北京市海淀区花园北路52号</text>
+
+    <!-- 二维码占位 -->
+    <rect x="300" y="810" width="150" height="110" rx="8" fill="#fff" stroke="#ddd" stroke-width="1"/>
+    <text x="375" y="870" text-anchor="middle" font-size="20" fill="#bbb" font-family="PingFang SC,Microsoft YaHei,sans-serif">企业微信</text>
+    <text x="375" y="895" text-anchor="middle" font-size="20" fill="#bbb" font-family="PingFang SC,Microsoft YaHei,sans-serif">二维码</text>
+  </g>
+
+</svg>
